@@ -1,16 +1,17 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main() {
 
-	int n = 5;
-	int sum = 0;
+	string a = "hello";
+	string b = a;
 
-	for (int i = 1; i<= n; i++) {
-		sum += i;
-	}
+	b += ", world";
+
+	cout << "a= " << a << endl;
+	cout << "b= " << b << endl;
 
 
-	cout << sum;
 	return 0;
 }
