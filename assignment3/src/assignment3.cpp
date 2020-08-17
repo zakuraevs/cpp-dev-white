@@ -8,21 +8,21 @@ int main() {
 
 	cin >> a >> b >> c;
 
-	if ( a == 0 ) {
-		double x = -c / b;
-		cout << x;
-	} else if ( b * b < 4 * a * c ) {
-		return 0;
-	} else {
-		double d = sqrt(b * b - 4 * a * c);
-		double x1 = ( -b + d)/(2*a);
-		double x2 = ( -b - d)/(2*a);
+	int d = b * b - 4 * a * c;
 
-		if (x1 == x2) {
-			cout << x1;
-		} else {
-			cout << x1 << " " << x2;
+	if ( a == 0 ) {
+		if ( b != 0 ){
+			double x = -c / b;
+			cout << x;
 		}
+	}  else if ( d == 0 ) {
+		double x = -b / (2 * a);
+		cout << x;
+	} else if (d > 0) {
+		double x1 = ( -b + sqrt(d))/(2*a);
+		double x2 = ( -b - sqrt(d))/(2*a);
+
+		cout << x1 << " " << x2;
 
 	}
 
