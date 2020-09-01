@@ -1,4 +1,4 @@
-
+//non-recursive implementation of Euclid's algorithm
 
 #include <iostream>
 using namespace std;
@@ -9,7 +9,6 @@ int main() {
 
 	cin >> a >> b;
 
-
 	while (a > 0 && b > 0){
 		if( a > b ) {
 			a = a % b;
@@ -17,7 +16,6 @@ int main() {
 			b = b % a;
 		}
 	}
-
 
 
 	cout << a + b;
