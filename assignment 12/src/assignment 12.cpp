@@ -15,6 +15,7 @@ bool IsPalindrom(string s) {
 
 vector<string> PalindromFilter(vector<string> words, int minLength) {
 
+
 	vector<string> res;
 
 	for(auto i : words) {
@@ -38,7 +39,7 @@ int main() {
 	vector<string> res = PalindromFilter(vect, 5);
 
 	for(auto i : res) {
-		cout << i << endl;
+		cout << i;
 	}
 
 	return 0;
