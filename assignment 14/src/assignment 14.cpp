@@ -14,16 +14,5 @@ void MoveStrings(vector<string>& source, vector<string>& destination) {
 
 int main() {
 
-	//vector<string> source = {"a", "b", "c"};
-	//vector<string> destination = {"z"};
-	//MoveStrings(source, destination);
-
-	/*for(auto i : source) {
-		cout << i;
-	}
-	for(auto i : destination) {
-			cout << i << endl;
-	}*/
-
 	return 0;
 }
