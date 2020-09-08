@@ -3,7 +3,7 @@
 using namespace std;
 
 
-void Reverse(vector<int>& v) {
+vector<int> Reversed(const vector<int>& v) {
 	vector<int> reverse;
 
 	int i = v.size()-1;
@@ -18,8 +18,7 @@ void Reverse(vector<int>& v) {
 
 
 
-	v = reverse;
-
+	return reverse;
 
 }
 
@@ -34,9 +33,8 @@ int main() {
 	v.push_back(4);
 	v.push_back(2);
 
-	Reverse(v);
 
-	for(auto i : v) {
+	for(auto i : Reversed(v)) {
 		cout << i << ", ";
 	}
 
